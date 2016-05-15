@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Master_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <script type="text/javascript">
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../PageCommon/style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main">
+            <div id="header">
+                <img src="../Images/logo.png" style="float: left" width="360" height="108">
+                
+            </div>
+            <div id="usermenu">
+                <ul id="navnew">
+                    <li class="current"><a href="../PageCommon/index.aspx">Home</a></li>
+                    <li><a href="../PageCommon/Search.aspx">Search Books</a></li>
+                    
+                    <li><a href="../PageCommon/Feedback.aspx">Suggestion</a></li>
+                   <li><a href="../pagecommon/Contact.aspx">Contact Us</a></li>
+                    <li><a href="../PageCommon/AboutUs.aspx">About Us</a></li>
+                </ul>
+            </div>
+            <div id="show">
+                <div id="lefs"  style="width: 710px; display: block; float: left">
+                    
+                  <h1> <marquee style="width: 597px" >Welcome to sinhgad Library </marquee></h1>
+                </div>
+                <div id="righs" style="float: right">
+                    
+                     
+                       
+                      [<a href="~/PageCommon/login.aspx" id="HeadLoginStatus" runat="server" style="color: #00BFBF; font-size: medium;">Log In</a> ]
+                      
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="content1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div id="footer">
+                <hr />
+             <div style="float:left;">
+                 <p>&copy;shinhgad liabrary</p>
+             </div>
+                <div style="float:right">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <b>Find Us :</b>
+                            </td>
+                            <td>
+                                &nbsp;&nbsp;
+                            </td>
+                            <td>
+                               <a href="https:www.facebook.com/shwetangee.khaire.75">
+                                   <img src="../Images/facebook.png" width="40" height="40"/>
+                               </a>
+                            </td>
+                             <td>
+                                &nbsp;&nbsp;
+                            </td>
+                            <td>
+                               <a href="https://plus.google.com">
+                                   <img src="../Images/gmail.png" width="30" height="35"/>
+                               </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
